@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No 4-Gym Registration Form</title>
+    <link rel="stylesheet" href="GymReg.css">
+</head>
+<body>
+    <div id="rbw">
+        <h1 id="title" ><u><font size="10">Gym Registration Form</u></font></h1>
+          <p id="description"><b><font size="6" color="white"><i>
+            Your body can stand almost anything. It’s your mind that you have to convince.
+            </font></i></b></p><font size="4">
+          <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+            <div class="rowTab">
+              <div class="labels">
+                <label id="name-label" for="name">Name: </label>
+              </div>
+              <div class="rightTab">
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label id="email-label" for="email">Email: </label>
+              </div>
+              <div class="rightTab">
+                <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label id="number-label" for="age">Age: </label>
+              </div>
+              <div class="rightTab">
+                <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="currentPos">Which type of option do you enrole?</label>
+              </div>
+              <div class="rightTab">
+                <select id="dropdown" name="currentPos" class="dropdown">
+              <option disabled value>Select an option</option>
+              <option  value="1 Month">1 Month</option>
+              <option value="3 Month">3 Month </option>
+              <option value="6 Month">6 Month</option>
+              <option value="1 Year">1 Year</option>
+            </select>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="userRating">Payment Type</label>
+              </div>
+              <div class="rightTab">
+                <ul style="list-style: none;">
+                  <li class="radio"><label><input name="radio-buttons" value="1"  type="radio" class="userRatings" >Cash in Full</label></li>
+                  <li class="radio"><label><input name="radio-buttons" value="2"  type="radio" class="userRatings" >Debit Card</label></li>
+                  <li class="radio"><label><input name="radio-buttons" value="3"  type="radio" class="userRatings" >Credit Card</label></li>
+                </ul>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="preferences">Please indicate any pre-existing medical conditions:</label>
+              </div>
+              <div class="rightTab">
+                <ul id="preferences" style="list-style: none;">
+                  <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Diabets</label></li>
+                  <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Heart Disease</li>
+                  <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Chest Pains</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Broken Bones</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Low/High Blood Pressure</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Asthma</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Fainting</label></li>
+                </ul>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="comments">Any Comments or Suggestions?</label>
+              </div>
+              <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+              </div>
+        <font size="5" color="white"><marquee behavior="slide" direction="up"><p style="text-align:center;" scrollamount="1">“Things may come to those who wait, but only the things left by those who hustle.”</marquee></font></p>
+            </div>
+             <div class="rightTab">
+                <ul id="preferences" style="list-style: none;">
+                  <center><label><input name="prefer" value="1" type="checkbox" class="userRatings">I Agree with your Terms and Conditions.</label><br>
+                  <input name="prefer" value="2" type="checkbox" class="userRatings">I Disagree with your terms and condition.</ul>
+            <center><button id="submit" type="submit">Submit</button>
+          </form>
+        </div> 
+</body>
+</html>
+
+
